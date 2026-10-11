@@ -32,7 +32,7 @@ Clone the module into your AzerothCore `modules` directory (from the root of you
 
 ```bash
 cd modules
-git clone https://github.com/blah.blah mod-afk-kicker
+git clone https://github.com/electrobutterfly/mod-afk-kicker.git
 
 ```
 
@@ -40,9 +40,7 @@ git clone https://github.com/blah.blah mod-afk-kicker
 
 Then re-run CMake and rebuild the server:
 
-bash
-
-```
+```bash
 cd ..
 mkdir -p build
 cd build
@@ -55,9 +53,7 @@ make install
 
 After `make install`, the distribution configuration file (`conf/mod_afk_kicker.conf.dist`) is automatically copied into the module configuration directory of your server installation, typically:
 
-text
-
-```
+```bash
 <server-root>/etc/modules/mod_afk_kicker.conf.dist
 ```
 
@@ -65,9 +61,7 @@ text
 
 Rename/copy it to `mod_afk_kicker.conf` (dropping the `.dist` suffix) and edit it as needed:
 
-bash
-
-```
+```bash
 cp etc/modules/mod_afk_kicker.conf.dist etc/modules/mod_afk_kicker.conf
 ```
 
@@ -117,9 +111,7 @@ Default: `0`
 
 ### Example
 
-ini
-
-```
+```bash
 AFK.Enabled       = 1
 AFK.CheckInterval = 30000
 AFK.KickTime      = 1800000
@@ -134,9 +126,7 @@ AFK.KickGM        = 0
 
 The module uses the `server.loading` logger. You can control its output through the standard AzerothCore logger configuration, for example:
 
-ini
-
-```
+```bash
 Logger.modules.afk = 3,Console Server
 ```
 
