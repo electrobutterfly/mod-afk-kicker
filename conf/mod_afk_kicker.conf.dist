@@ -1,0 +1,54 @@
+# This file is part of the AFK Kicker Module subsystem for AzerothCore.
+#
+# Copyright (C) 2026 Klaus Simon
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+###################################################################################################
+# AFK KICKER MODULE
+#
+#    AFK.Enabled
+#        Description: Enable/Disable the AFK kicker module.
+#        Default:     1 - (Enabled)
+#                     0 - (Disabled)
+
+AFK.Enabled = 1
+
+#    AFK.CheckInterval
+#        Description: Time (in milliseconds) between checks for AFK players.
+#        Default:     30000 - (30 seconds)
+
+AFK.CheckInterval = 30000
+
+#    AFK.KickTime
+#        Description: Time (in milliseconds) a player can be AFK before being kicked.
+#        Default:     1800000 - (30 minutes)
+
+AFK.KickTime = 1800000
+
+#    AFK.KickGM
+#        Description: Whether to kick Game Masters (GM) who are AFK.
+#        Default:     0 - (Do not kick GMs)
+#                     1 - (Kick GMs like normal players)
+
+AFK.KickGM = 0
+
+###################################################################################################
+# LOGGING
+#
+#    Logger.modules.afk
+#        Description: Logging for the AFK kicker module.
+#        Default:     3,Console Server
+
+Logger.modules.afk = 3,Console Server
