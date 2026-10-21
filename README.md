@@ -1,6 +1,8 @@
 # mod-afk-kicker
 
-![banner](banner.jpg)
+------
+
+![](https://raw.githubusercontent.com/electrobutterfly/mod-afk-kicker/refs/heads/main/banner.jpg)
 
 A module for [AzerothCore](https://www.azerothcore.org/) that automatically kicks players who remain AFK (Away From Keyboard) for longer than a configurable duration.
 
